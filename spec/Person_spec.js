@@ -4,31 +4,31 @@ let person = new myTest.Person('Ryan', 30, 'male', ['being a hardarse', 'agile',
 
 describe("constructor for the class 'Person'", () => {
 
-  it("returns name", function () {
+  it("Should return name", function () {
     expect(person.name).toEqual('Ryan');
   });
 
 
-  it("returns gender", function () {
+  it("Should return gender", function () {
     expect(person.gender).toEqual('male');
   });
 
 
-  it("returns age", function () {
+  it("Should return age", function () {
     expect(person.age).toEqual(30);
   });
 
 
-  it("returns intrests", function () {
+  it("Should return intrests", function () {
     expect(person.intrests).toEqual(['being a hardarse', 'agile', 'ssd hard drives']);
   });
 
 });
 
-describe("function 'Hello' in a class 'Person'", function () {
+describe("function 'hello' in a class 'Person'",  () => {
 
-  it("returns greeting", function () {
-    expect(person.Hello()).toEqual(`Hello, my name is Ryan and I am 30 years old. I'm a male My interests are being a hardarse,agile,ssd hard drives`);
+  it("Should return greeting", function () {
+    expect(person.hello()).toEqual(`Hello, my name is Ryan and I am 30 years old. I'm a male My interests are being a hardarse,agile,ssd hard drives`);
   });
 
 });
