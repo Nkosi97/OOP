@@ -1,6 +1,6 @@
-let myTest = require("../src/Person");
+let myTest = require("../src/person");
 
-let person = new myTest.Person('Ryan', 30, 'male', ['being a hardarse', 'agile', 'ssd hard drives'])
+let person = new myTest.Person('Ryan', 30, ['being a hardarse', ' agile and ssd hard drives.'])
 
 describe("constructor for the class 'Person'", () => {
 
@@ -8,19 +8,12 @@ describe("constructor for the class 'Person'", () => {
     expect(person.name).toEqual('Ryan');
   });
 
-
-  it("Should return gender", function () {
-    expect(person.gender).toEqual('male');
-  });
-
-
   it("Should return age", function () {
     expect(person.age).toEqual(30);
   });
 
-
   it("Should return intrests", function () {
-    expect(person.intrests).toEqual(['being a hardarse', 'agile', 'ssd hard drives']);
+    expect(person.interests).toEqual(['being a hardarse', ' agile and ssd hard drives.']);
   });
 
 });
@@ -28,7 +21,7 @@ describe("constructor for the class 'Person'", () => {
 describe("function 'hello' in a class 'Person'",  () => {
 
   it("Should return greeting", function () {
-    expect(person.hello()).toEqual(`Hello, my name is Ryan and I am 30 years old. I'm a male My interests are being a hardarse,agile,ssd hard drives`);
+    expect(person.hello()).toEqual(`Hello, my name is Ryan and I am 30 years old. My interests are being a hardarse, agile and ssd hard drives.`);
   });
 
 });
